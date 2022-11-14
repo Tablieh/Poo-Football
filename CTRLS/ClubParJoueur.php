@@ -15,5 +15,9 @@ Class ClubParJoueur{
     public function setClub(){
         return $this->_club;
     }
+    public function __toString()
+    {
+        return $this->_club.'<br>'.$this->_joueur;
+    }
 
 }

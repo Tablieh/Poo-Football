@@ -57,4 +57,13 @@ $player8=new JoueurParClub($Neymar,$res3); // Neymar crear
 
 
 echo $france->afficheEquipe();
+echo '<br>';
+echo $espange->afficheEquipe();
+echo '<br>';
+echo $angleterre->afficheEquipe();
+echo '<br>';
+echo $italie->afficheEquipe();
+echo '<br>';
+echo $res1;
+
 ?>

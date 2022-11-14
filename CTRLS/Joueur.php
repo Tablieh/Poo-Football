@@ -11,4 +11,8 @@ Class Joueur{
         $this->_ville = $ville;
         $this->_Age = $Age;
     }
+    public function __toString()
+    {
+        return $this->_nom.'<br>'.$this->_prenom.'<br>'.$this->_ville." ".$this->_Age;
+    }
 }

@@ -74,7 +74,7 @@ echo $Juventus->afficheJoueur();
 
 
 
-echo $LionelCrear;
+//echo $LionelCrear;
 echo $Lionel->afficheListClub();
 
 ?>

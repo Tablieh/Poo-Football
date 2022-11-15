@@ -13,17 +13,6 @@ Class Equipe{
         $this->joueurs = [];
         $this->carears= [];
     }
-    public function AjoutListClub($carear) {
-        array_push($this->carears,$carear);
-    }
-    public function afficheListClub() {
-        $result = "$this"."<br>"."<ul>";
-        foreach ($this->carears as $carear) {
-            $result .= "<li>".$carear->getClub()." ".$carear->getDate_entree()."</li>";
-        }
-        $result .= "</ul>";
-        return $result;
-    }
     public function AjoutJoueur($joueur) {
         array_push($this->joueurs, $joueur);
     }

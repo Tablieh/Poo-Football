@@ -8,7 +8,7 @@ Class Carear{
         $this->joueur =$joueur;
         $this->date_entree = $date_entree;
         $this->club = $club;
-        $club->afficheListClub($this);
+        $club->AjoutJoueur($this);
         $joueur->AjoutListClub($this);
     }
     

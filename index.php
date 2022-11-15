@@ -24,36 +24,22 @@ $ManCity = new Equipe("Manchester City F.C.",$angleterre,1880); //crééra un ob
 $Manchester = new Equipe("Manchester united",$angleterre,1902); //crééra un objet Equipe de ville Angleterre et nom club : Manchester united , anne de club
 $Juventus = new Equipe("Juventus F.C.",$italie,1897); //crééra un objet Equipe de ville Italie et nom club : Juventus F.C. , anne de club
 
-$Kylian =new Joueur("Kylian","Mbappé",$france,24); //crééra un objet jouer de nom prenom ,annee de naissance
-$Ronaldo =new Joueur("Ronaldo","Cristiano",$portugal ,37); //crééra un objet jouer de nom prenom ,annee de naissance
-$Lionel =new Joueur("Lionel","Messi",$argentina,35); //crééra un objet jouer de nom prenom ,annee de naissance
-$Neymar =new Joueur("Júnior","Neymar",$brazil,30); //crééra un objet jouer de nom prenom ,annee de naissance
+$Kylian =new Joueur("Kylian","Mbappé",$france,"20-12-1998"); //crééra un objet jouer de nom prenom ,annee de naissance
+$Ronaldo =new Joueur("Ronaldo","Cristiano",$portugal ,"5-2-1985"); //crééra un objet jouer de nom prenom ,annee de naissance
+$Lionel =new Joueur("Lionel","Messi",$argentina,"24-6-1987"); //crééra un objet jouer de nom prenom ,annee de naissance
+$Neymar =new Joueur("Júnior","Neymar",$brazil,"5-2-1992"); //crééra un objet jouer de nom prenom ,annee de naissance
 
+$LionelCrear = new Carear($Lionel,$Barcelone,2004);
+$LionelCrear1 = new Carear($Lionel,$psg,2021);
 
-$res1= new ClubParJoueur($psg,$Kylian,2017); //psg joueur
-$res2= new ClubParJoueur($psg,$Lionel,2021); //psg joueur
-$res3= new ClubParJoueur($psg,$Neymar,2017); //psg joueur
+$NeymarCrear = new Carear($Neymar,$Barcelone,2013);
+$NeymarCrear1 = new Carear($Neymar,$psg,2017);
 
-$res4= new ClubParJoueur($Barcelone,$Lionel,2004); //Barcelone joueur
-$res5= new ClubParJoueur($Barcelone,$Neymar,2013); //Barcelone joueur
+$RonaldoCrear = new Carear($Ronaldo,$Manchester,2003);
+$RonaldoCrear1 = new Carear($Ronaldo,$Madrid,2009);
+$RonaldoCrear1 = new Carear($Ronaldo,$Juventus,2018);
 
-$res6= new ClubParJoueur($Juventus,$Ronaldo,2018); //Juventus joueur
-
-
-$res7= new ClubParJoueur($Madrid,$Ronaldo,2009); //Real joueur
-$res8= new ClubParJoueur($Manchester,$Ronaldo,2021); //Manchester joueur
-
-$player1=new JoueurParClub($Kylian,$res1); //Kylian crear
-
-$player2=new JoueurParClub($Ronaldo,$res7); // Ronaldo crear
-$player3=new JoueurParClub($Ronaldo,$res6); // Ronaldo crear
-$player4=new JoueurParClub($Ronaldo,$res8); // Ronaldo crear
-
-$player5=new JoueurParClub($Lionel,$res4); // Messi crear
-$player6=new JoueurParClub($Lionel,$res2); // Messi crear
-
-$player7=new JoueurParClub($Neymar,$res5); // Neymar crear
-$player8=new JoueurParClub($Neymar,$res3); // Neymar crear
+$KylianCrear = new Carear($Kylian,$psg,"20-12-1998",2017);
 
 
 echo $france->afficheEquipe();
@@ -64,6 +50,31 @@ echo $angleterre->afficheEquipe();
 echo '<br>';
 echo $italie->afficheEquipe();
 echo '<br>';
-echo $res1;
+
+
+echo $psg->afficheJoueur();
+echo '<br>';
+/*
+echo $om->afficheJoueur();
+echo '<br>';
+echo $ol->afficheJoueur();
+echo '<br>';
+echo $rcsa->afficheJoueur();
+echo '<br>';
+echo $Madrid->afficheJoueur();
+echo '<br>';
+echo $Barcelone->afficheJoueur();
+echo '<br>';
+echo $ManCity->afficheJoueur();
+echo '<br>';
+echo $Manchester->afficheJoueur();
+echo '<br>';
+echo $Juventus->afficheJoueur();
+*/ 
+
+
+
+//echo $LionelCrear;
+//echo $Lionel->afficheListClub();
 
 ?>
